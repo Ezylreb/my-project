@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmenzo, Rose Ann IB</title>
+    <link rel="stylesheet" href="purchase.css">
+</head>
+
+<body>
+
+    <form>
+        <h2>Item Purchase</h2>
+
+        <label for="product">Computer Parts</label>
+        <select name="" id="product">
+            <option value="">Select a Product</option>
+            <option value="RAM">RAM</option>
+            <option value="Graphic_Card">Graphic Card</option>
+            <option value="Power_Supply">Power Supply</option>
+        </select>
+        <span class="error-message" id="productError"></span>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="1" placeholder="ex. 1">
+        <span class="error-message" id="quantityError"></span>
+
+        <button type="button" onclick="computeTotal()">Buy Now</button>
+        <div id="total"></div>
+    </form>
+
+
+    <script src="purchase.js"></script>
+</body>
+
+</html>
